@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Graphics and animation using HTML5 Canvas</title>
+    <style>
+    #the-canvas { border: 1px dashed gray }   
+    </style>
+    <script>
+        addEventListener('load', function() {
+            // TODO: write code here
+            var theCanvas = document.getElementById('the-canvas');
+            var ctx = theCanvas.getContext("2d");
+            if (ctx) {
+
+                var image = new Image();
+                image.src = "doge.jpg";
+                image.addEventListener("load", function(){
+                    ctx.drawImage(image, 100, 200);
+                });
+            }
+        });
+</script>
+</head>
+<body>
+    <canvas id="the-canvas" width="500" height="400">   
+        Your browser does not support the &lt;canvas&gt; element.
+    </canvas>
+</body>
+</html>

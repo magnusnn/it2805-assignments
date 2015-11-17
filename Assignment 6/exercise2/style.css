@@ -1,0 +1,58 @@
+body{
+	padding: 30px 30px;
+}
+
+label {
+    color: red;
+}
+
+form{
+	padding: left;
+	width: 580px;
+	text-align: left;
+	position: relative;
+	font-family: "Georgia", serif;
+	text-decoration: center;
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid #999;
+	border: inset 1px solid #333;	
+	background: #FAFAFA		
+}
+
+
+form textarea {
+	width: 250px;
+	height: 120px;
+}
+
+
+
+
+input#name{
+	position: relative;
+	padding-left: 2px;
+	left: 31px;
+}
+
+input#email{
+	position: relative;
+	padding-left: 2px;
+	left: 22px;
+}
+
+input#address{
+	position: relative;
+	padding-left: 2px;
+	left: 12px;
+}
+
+input#phone{
+	position: relative;
+	padding-left: 2px;
+	left: 16px;
+}
+
+.optional{
+	padding-left: 12px;
+}

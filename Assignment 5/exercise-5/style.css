@@ -1,0 +1,101 @@
+body{
+	font-family: "Georgia", serif;
+}
+
+header{
+	font-family: "Helvetica", sans-serif;
+	text-align: center;
+	padding: 5px;
+	width: 100%
+}
+
+header a:hover {
+	font-family: "Calibri", serif;
+	font-size: 125%;
+	color: lightblue;
+}
+
+nav{
+	float: left;
+	line-height: 25px;
+	padding: 10px;
+	height: 200px;
+	width: 135px;
+}
+
+h1{
+	text-align: center;
+}
+
+
+section#main{
+	width: 80%;
+	height: 100%;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	float: right;
+	text-align: left;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+footer{
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+
+
+p{
+    font-family: times;
+    text-align: left;
+}
+
+table{
+    margin: auto auto;
+    margin-top: 30px;
+    font-family: times;
+    border: 1px solid #473D51;
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+    
+}
+
+th,td {
+    border: 1px solid gray;
+    text-align: center;
+    
+}
+
+th{
+    background: gray;
+    font-family:sans-serif;
+    color: black;
+}
+
+td {
+    color: black; 
+    background: white;
+}
+
+#cornerstone{
+    color: gray;
+}
+
+.Fag {
+    background: lightgreen;
+}
+
+#Content{
+    margin-left: 1px;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 100px;
+
+}
+
+#CourseDescriptions{
+}

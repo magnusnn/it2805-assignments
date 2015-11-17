@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Skjema for WEBTEK!</title>
+	</head>
+	
+	<body>
+
+		<h1>Skjema</h1>
+
+		<form action="http://www.idi.ntnu.no/~michailg/IT2805/form.php" method="post">
+
+			<label>* </label>Navn: <input type='text' id='name' name='name' placeholder="Navn" required><br>
+			<label>* </label>E-post: <input type='email' id='email' name='email' placeholder="E-post" required> <br>
+			
+			<div class='optional'>
+				Adresse: <input type='text' id='address' name='address' placeholder="Adresse"><br>
+				Telefon: <input type='tel' id='phone' name='phone' placeholder="Telefonnummer"><br>
+			</div>
+			<hr>
+
+			<label>* </label>Hvilken klasse går du i? <br>
+			<input type='radio' name='year' required value='1'>1st Year - Freshman <br>
+			<input type='radio' name='year' value='2'>2nd Year - Sophmore <br>
+			<input type='radio' name='year' value='3'>3rd Year - Junior <br>
+			<input type='radio' name='year' value='4'>4th Year - Senior <br>
+
+			<hr>
+
+			<label>* </label>Når startet du? <br>
+			<input type='date' id='startdate' name='startDate' required><br>
+
+			<hr>
+
+			<input type='checkbox' name='classes[]' value='ITX1001'>ITX1001: HTML Basics<br>
+			<input type='checkbox' name='classes[]' value='ITX1002'>ITX1002: URLs and Site Structures<br>
+			<input type='checkbox' name='classes[]' value='ITX2001'>ITX2001: Introduction to Cascading Style Sheets (CSS)<br>
+			<input type='checkbox' name='classes[]' value='ITX2002'>ITX2002: CSS Properties and Applications<br>
+			<input type='checkbox' name='classes[]' value='ABC1001'>ABC1001: Working with Multimedia on the Web<br>
+			<input type='checkbox' name='classes[]' value='JSX1001'>JSX1000: Introduction to JavaScript<br>
+			<input type='checkbox' name='classes[]' value='JSX1040'>JSX1040: JavaScript: DOM<br>
+			<input type='checkbox' name='classes[]' value='XML1000'>XML1000: XML: Formatting Namespace Trees<br>
+
+			<hr>
+			<p>Kommentarer eller andre tilbakemeldinger:</p>
+			<textarea name="comments" cols="20" rows="5" placeholder="Skriv en kommentar:"></textarea>
+
+			<hr>
+			<input type="submit" name="submit" value="Submit">
+
+
+
+		</form> 
+
+		<footer>
+				<hr>
+				&copy; magnne<br>
+			</footer>
+
+	</body>
+</html>

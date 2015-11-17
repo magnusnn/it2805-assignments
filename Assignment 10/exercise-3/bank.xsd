@@ -1,0 +1,68 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="accountType">
+		<xs:sequence>
+			<xs:element name="balance">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:minExclusive value="-5000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+		<xs:attribute name="interest" type="xs:decimal"/>
+	</xs:complexType>
+	<xs:element name="bank">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="accounts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="savings_accounts">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="savings_account" type="accountType" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="checking_accounts">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="checking_account" type="accountType" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="customers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="customer" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string"/>
+										<xs:element name="address" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:ID" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="customer_accounts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="customer_account" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="customer_id" type="xs:IDREF" use="required"/>
+									<xs:attribute name="account_id" type="xs:IDREF" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

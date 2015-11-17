@@ -1,0 +1,27 @@
+<!DOCTYPE bank[
+
+	<!ELEMENT bank(accounts, customers, customer_accounts)>
+
+	<!ELEMENT accounts(savings_accounts, checking_accounts)>
+	<!ELEMENT saving_accounts(saving_account+)>
+	<!ELEMENT saving_account(balance)>
+	<!ELEMENT checking_accounts(checking_account+)>
+	<!ELEMENT checking_account(balance)>
+	<!ELEMENT balance(#PCDATA)>
+
+	<!ELEMENT customers(customer+)>
+	<!ELEMENT customer(name, address)>
+	<!ELEMENT name(#PCDATA)>
+	<!ELEMENT address(#PCDATA)>
+
+	<!ELEMENT customer_accounts(customer_account+)>
+	<!ELEMENT customer_account(#PCDATA)>
+
+	<!ATTLIST saving_account id ID #REQUIRED>
+	<!ATTLIST saving_account interest CDATA #REQUIRED>
+	<!ATTLIST checking_account id ID #REQUIRED>
+	<!ATTLIST customer id ID #REQUIRED>
+	<!ATTLIST customer_account customer_id IDREF #REQUIRED>
+	<!ATTLIST customer_account account_id IDREF #REQUIRED>
+
+]>

@@ -1,0 +1,43 @@
+body{
+	font-family: "Georgia", serif;
+}
+
+header{
+	font-family: "Helvetica", sans-serif;
+	text-align: center;
+	padding: 5px;
+	width: 100%
+}
+
+header a:hover {
+	font-family: "Calibri", serif;
+	font-size: 125%;
+	color: lightblue;
+}
+
+nav{
+	float: left;
+	line-height: 25px;
+	padding: 10px;
+	height: 200px;
+	width: 135px;
+}
+
+section#main{
+	position: relative;
+	width: 80%;
+	margin-left: 150px;
+}
+
+footer{
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+
+nav a:hover{
+	font-family: "Calibri", serif;
+	font-size: 125%;
+	color: lightblue;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Graphics and animation using HTML5 Canvas</title>
+    <style>
+    #the-canvas { border: 1px dashed gray }   
+    </style>
+    <script>
+        addEventListener('load', function() {
+            // TODO: write code here
+            var canvas = document.getElementById("the-canvas"),
+                context = canvas.getContext("2d"),
+                image = new Image(),
+                angle = 0,
+                r = 95,
+                speed = 0.05;
+            
+            image.src = "doge.jpg";
+            image.addEventListener("load", function () {
+                context.drawImage(image, 150, 0);
+                setInterval(function () {
+                    angle += speed;
+                    context.clearRect(0, 0, 400, 400);
+                    context.drawImage(image, Math.floor(150 + r * Math.cos(angle)), Math.floor(100 + r * Math.sin(angle)))
+                }, 30)
+            });
+        });
+</script>
+</head>
+<body>
+    <canvas id="the-canvas" width="500" height="400">   
+        Your browser does not support the &lt;canvas&gt; element.
+    </canvas>
+</body>
+</html>

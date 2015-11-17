@@ -1,0 +1,62 @@
+h1{
+    font-family: times;
+    text-align: center;
+}
+
+a{
+    
+}
+
+p{
+    font-family: times;
+    text-align: center;
+}
+
+table{
+    margin: auto auto;
+    margin-top: 30px;
+    font-family: times;
+    border: 1px solid #473D51;
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+    
+}
+
+th,td {
+    border: 1px solid gray;
+    text-align: center;
+    
+}
+
+th{
+    background: gray;
+    font-family:sans-serif;
+    color: black;
+}
+
+td {
+    color: black; 
+    background: white;
+}
+
+#cornerstone{
+    color: gray;
+}
+
+.Fag {
+    background: lightgreen;
+}
+
+#Content{
+    margin-left: 75px;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 100px;
+
+}
+
+#CourseDescriptions{
+}
+
+
